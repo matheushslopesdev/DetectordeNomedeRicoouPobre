@@ -26,6 +26,7 @@
         border: 1px solid black;
         height: 40px;
         border-radius: 10px;
+        padding: 0 10px 0 10px;
     }
 
     & input[type='text']:focus{
@@ -71,6 +72,13 @@
 #resultado{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+    & p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
