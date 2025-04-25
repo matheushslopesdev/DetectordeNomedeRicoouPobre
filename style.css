@@ -39,7 +39,7 @@
     }
 }
 
-button{
+#button-nome{
     border: none;
     background-color: tomato;
     color: white;
@@ -47,14 +47,23 @@ button{
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
-
-    
 }
-button:hover{
+
+.dark{
+    margin: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: inherit;
     cursor: pointer;
 }
 
-button:active{
+
+
+#button-nome:hover{
+    cursor: pointer;
+}
+
+#button-nome:active{
     background-color: black;
     color: tomato;
 }

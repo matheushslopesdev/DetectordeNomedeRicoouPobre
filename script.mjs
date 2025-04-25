@@ -1,8 +1,11 @@
 import { frases } from "./frases.mjs";
 
+
+const buttonTheme = document.querySelector('.dark')
 const inputName = document.querySelector("#nome");
 const button = document.querySelector("#button-nome");
 const resultado = document.querySelector("#resultado");
+const label = document.querySelector('#label')
 
 function random(max, min) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -67,3 +70,21 @@ inputName.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
+
+
+buttonTheme.addEventListener('click', ()=>{
+
+    if(buttonTheme.innerHTML === '🌙'){
+        window.document.body.style.backgroundColor = '#313131'
+        label.style.color = '#ffffff'
+        resultado.style.color = '#ffffff'
+        buttonTheme.innerHTML = '☀️'
+    }
+    else{
+        window.document.body.style.backgroundColor = '#ffffff'
+        label.style.color = '#000000'
+        resultado.style.color = '#00000'
+        buttonTheme.innerHTML = '🌙'
+    }
+    
+})
